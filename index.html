@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="/assets/logo.png" alt="logo" class="logo">
+      <h2>Emergency Service</h2>
+    </div>
+    <div class="nav-right">
+      <span><img src="/assets/heart.png" class="top-icon"> <span id="heartCount">0</span></span>
+      <span><img src="/assets/coin.png" class="top-icon"> <span id="coinCount">100</span></span>
+      <span><img src="/assets/copy.png" class="top-icon"> <span id="copyCount">0</span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="/assets/logo-dark.png" alt="gov logo" class="hero-logo">
+    <p>Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    
+  </section>
+
+  <!-- Main -->
+  <main class="container">
+    <!-- Cards Section -->
+    <section class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/emergency.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>জাতীয় জরুরি সেবা</h3>
+        <p>National Emergency</p>
+        <h2 class="number">999</h2>
+        <span class="badge">সরকারি</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('999')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('জাতীয় জরুরি সেবা','999')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/police.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>পুলিশ</h3>
+        <p>Police</p>
+        <h2 class="number">999</h2>
+        <span class="badge">পুলিশ</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('999')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('পুলিশ','999')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/fire-service.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>ফায়ার সার্ভিস</h3>
+        <p>Fire Service</p>
+        <h2 class="number">999</h2>
+        <span class="badge">ফায়ার</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('999')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('ফায়ার সার্ভিস','999')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/ambulance.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>অ্যাম্বুলেন্স</h3>
+        <p>Ambulance</p>
+        <h2 class="number">1994-999999</h2>
+        <span class="badge">স্বাস্থ্য</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('1994-999999')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('অ্যাম্বুলেন্স','1994-999999')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/emergency.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>নারী ও শিশু সহায়তা</h3>
+        <p>Women & Child Helpline</p>
+        <h2 class="number">109</h2>
+        <span class="badge">সরকারি</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('109')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('নারী ও শিশু সহায়তা','109')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/emergency.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>দুর্নীতি দমন</h3>
+        <p>Anti-Corruption</p>
+        <h2 class="number">106</h2>
+        <span class="badge">সরকারি</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('106')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('দুর্নীতি দমন','106')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/emergency.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>বিদ্যুৎ বিঘ্ন</h3>
+        <p>Electricity Outage</p>
+        <h2 class="number">16216</h2>
+        <span class="badge">বিদ্যুৎ</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('16216')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('বিদ্যুৎ বিঘ্ন','16216')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/brac.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>ব্র্যাক</h3>
+        <p>BRAC</p>
+        <h2 class="number">16445</h2>
+        <span class="badge">এনজিও</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('16445')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('ব্র্যাক','16445')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon"><img src="/assets/Bangladesh-Railway.png" alt="icon"></div>
+          <div class="card-heart"><img src="/assets/black.png" alt="heart" class="icon-heart" onclick="increaseHeart(this)"></div>
+        </div>
+        <h3>বাংলাদেশ রেলওয়ে</h3>
+        <p>Bangladesh Railway</p>
+        <h2 class="number">163</h2>
+        <span class="badge">পরিবহন</span>
+        <div class="card-actions">
+          <button onclick="copyNumber('163')"><img src="/assets/copy.png" class="action-icon"> Copy</button>
+          <button onclick="makeCall('বাংলাদেশ রেলওয়ে','163')"><img src="/assets/telephone.png" class="action-icon"> Call</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <aside class="history">
+      <div class="history-header">
+        <h3>📞 Call History</h3>
+        <button onclick="clearHistory()">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
